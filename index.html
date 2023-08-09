@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>apple website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+    body{font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+    #nav1{background-color:rgba(170, 170, 170, 0.8);
+          padding: 0.09em;
+          text-align: center;}
+    #nav1 li{list-style: none;
+             padding-inline: 17px;
+             display: inline;}
+    #nav1 li:hover{background-color:white;
+                   cursor: pointer;}
+    #firstiphone{width: 100%;
+                 height: 100%;
+                 margin-top: 0%;}
+    .centered {position: absolute;
+               top: 15%;
+               left: 50%;
+               transform: translate(-50%, -50%);
+               font-size: larger;}
+    .center{position: absolute;
+               top: 21%;
+               left: 50%;
+               transform: translate(-50%, -50%);
+               font-size: large;}
+    .middle{position: absolute;
+               top: 27%;
+               left: 50%;
+               transform: translate(-50%, -50%);
+               font-size: large;}
+    .container{position: relative;}
+    .conatiner2{position: relative;}
+    .centered2{position: absolute;
+               top: 15%;
+               left: 50%;
+               transform: translate(-50%, -50%);
+               color: aliceblue;
+               font-size: larger;}
+    .center2{position: absolute;
+               top: 20%;
+               left: 50%;
+               transform: translate(-50%, -50%);
+               color: aliceblue;
+               font-size: large;}
+    .middle2{position: absolute;
+               top: 27%;
+               left: 50%;
+               transform: translate(-50%, -50%);
+               font-size: large;}
+    .container3{position: relative;}
+    .centered3{position: absolute;
+               top: 53%;
+               left: 50%;
+               transform: translate(-50%, -50%);
+               color: aliceblue;
+               font-size: medium;}
+    .center3{position: absolute;
+               top: 67%;
+               left: 50%;
+               transform: translate(-50%, -50%);}
+    .middle3{position: absolute;
+               top: 78%;
+               left: 50%;
+               transform: translate(-50%, -50%);
+               color: aliceblue;
+               font-size: xx-large;}
+    .central{position: absolute;
+               top: 90%;
+               left: 50%;
+               transform: translate(-50%, -50%);
+               color: aliceblue;
+               font-size: 30px;}
+    .learn{color: aliceblue;}
+    #box{display:flex;
+         position: relative;}
+    #mac{max-width: 49%;
+         margin: 10px 10px 10px 0px;}
+    #lady{max-width: 49%;
+          margin: 10px 0px 10px 10px;}
+    .mach{position: absolute;
+               top: 15%;
+               left: 25%;
+               transform: translate(-50%, -50%);
+               font-size: x-large;}
+    .mach2{position: absolute;
+               top: 20%;
+               left: 24.6%;
+               transform: translate(-50%, -50%);
+               font-size: large;}
+    .maclink{position: absolute;
+               top: 25%;
+               left: 24.6%;
+               transform: translate(-50%, -50%);
+               font-size: large;}
+    .vr{position: absolute;
+               top: 65%;
+               right: 11%;
+               transform: translate(-50%, -50%);
+               font-size: x-large;}
+    .vrh{position: absolute;
+               top: 70%;
+               right: -2%;
+               transform: translate(-50%, -50%);
+               font-size: large;}
+    .vrh2{position: absolute;
+               top: 75%;
+               right: 4%;
+               transform: translate(-50%, -50%);
+               font-size: 23px;
+               color: dimgrey;}
+    .vrh3{position: absolute;
+               top: 80%;
+               right: 18.5%;
+               transform: translate(-50%, -50%);
+               font-size: larger;}
+    #box2{display: flex;
+          position: relative;}
+    #applewatch{max-width: 49%;
+                margin: 10px 10px 10px 0px;}
+    .watchhead{position: absolute;
+               top: 15%;
+               left: 24%;
+               transform: translate(-50%, -50%);
+               font-size: x-large;
+               color: aliceblue;}
+    .watchhead2{position: absolute;
+               top: 19.5%;
+               left: 24.5%;
+               transform: translate(-50%, -50%);
+               font-size: medium;
+               color: red;
+               font-weight: lighter;}
+    .watchhead3{position: absolute;
+               top: 25%;
+               left: 24.5%;
+               transform: translate(-50%, -50%);
+               font-size: larger;
+               color: aliceblue;}
+    .watchhead4{position: absolute;
+               top: 29%;
+               left: 24.5%;
+               transform: translate(-50%, -50%);
+               font-size: large;}
+    #box3{display: flex;
+          position: relative;}
+    #ipad{max-width: 49%;
+          margin: 10px 10px 10px 0px;}
+    .ipad1{position: absolute;
+               top: 15%;
+               left: 24%;
+               transform: translate(-50%, -50%);
+               font-size: x-large;
+               color: aliceblue;}
+    .ipad2{position: absolute;
+               top: 20%;
+               left: 24%;
+               transform: translate(-50%, -50%);
+               font-size: large;
+               color: aliceblue;}
+    .ipad3{position: absolute;
+               top: 29%;
+               left: 24%;
+               transform: translate(-50%, -50%);
+               font-size: large}
+    #iphone{max-width: 49%;
+          margin: 10px 0px 10px 10px}
+    .iphone1{position: absolute;
+               top: 15%;
+               right: 14%;
+               transform: translate(-50%, -50%);
+               font-size: x-large;}
+    .iphone2{position: absolute;
+               top: 22%;
+               right: -2%;
+               transform: translate(-50%, -50%);
+               font-size: x-large;}
+    .iphone3{position: absolute;
+               top: 27%;
+               right: 3%;
+               transform: translate(-50%, -50%);
+               font-size: x-large;}
+    .down{width: auto;
+         height: 100%;
+         background-color: rgb(237, 237, 237);
+         line-height: 3px;
+         padding: 10px 200px 10px 250px ;
+         font-size: smaller;}
+    .list li{list-style: none;
+             line-height: 27px;
+             font-size: smaller;}
+    #lists{height: fit-content;
+           display: flex;
+           flex-wrap: wrap;
+           flex-direction: row;
+           justify-content:space-evenly;
+           align-items: stretch;
+           cursor: pointer;
+           background-color: rgb(237, 237, 237);
+           padding: 0% 11% 0% 11%;}
+    #back{max-width: 49%;
+          margin: 10px 0px 10px 10px;}
+    .back1{position: absolute;
+               top: 20%;
+               right: 5%;
+               transform: translate(-50%, -50%);
+               font-size: x-large;}
+    .back2{position: absolute;
+               top: 25%;
+               right: 13%;
+               transform: translate(-50%, -50%);
+               font-size: x-large;}
+    .back3{position: absolute;
+               top: 29%;
+               right: 0%;
+               transform: translate(-50%, -50%);
+               font-size: x-large;
+               font-weight: lighter;}
+    .back4{position: absolute;
+               top: 35%;
+               right: 18%;
+               transform: translate(-50%, -50%);
+               font-size: x-large;}
+</style>
+</head>
+<body>
+<div id="nav1">
+    <ul>
+        <li><i class="fa-brands fa-apple"></i></li>
+        <li>Store</li>
+        <li>Mac</li>
+        <li>Ipad</li>
+        <li>Watch</li>
+        <li>Vision</li>
+        <li>AirPods</li>
+        <li>TV & Home</li>
+        <li>Entertainment</li>
+        <li>Acessories</li>
+        <li>Support</li>
+        <li><i class="fa-solid fa-magnifying-glass"></i></li>
+        <li><i class="fa-solid fa-bag-shopping"></i></li>
+    </ul>
+</div>
+<div class="container2">
+      <img id="firstiphone" src="./iphone.jpg">
+   <div class="centered2"><h1>iPhone 14 Pro</h1></div>
+   <div class="center2"> <h2>Pro. Beyond.</h2></div>
+   <div class="middle2"> 
+    <h3><a href="#">learn more.</a> &nbsp; &nbsp;<a href="#">Buy.</a></h3>
+    </div>
+</div>
+
+    <div class="container">
+        <img src="./hero_iphone14_yellow__eun20sn4imi6_large.jpg" style="width: 100%;">
+        <div class="centered"><h1>iPhone 14</h1></div>
+        <div class="center"><h2>Wonderfull.</h2></div>
+        <div class="middle"><h3><a href="#"> learn more</a> &nbsp;&nbsp;<a href="#">buy now</a> </h3></div>
+    </div>
+</div>
+<div class="container3">
+ <img src="./movie logo.jpg" style="width: 100%;">
+ <div class="centered3"><h1>Apple at work presents</h1></div>
+ <div class="center3"><img src="./swiped.png"></div>
+ <div class="middle3"><h3>Best-In-Class for worst case scenarios</h3></div>
+ <div class="central"><h4><a class="learn" href="#">learn more></a> &nbsp;&nbsp;<a class="learn" href="#">Watch Full movie.</a></i></h4></div>
+</div>
+<section id="box">
+<img id="mac" src="./mac.jpg">
+<div class="mach"><h1>MacBook Air 15"</h1></div>
+<div class="mach2"><h4>Impossibly Big. Impossibly Thin.</h4></div>
+<div class="maclink"><a href="#">Learn more ></a>&nbsp;&nbsp;<a href="#">Buy now ></a></div>
+<img id="lady" src="./lady.jpg">
+<div class="vr"><h1><i class="fa-brands fa-apple"></i>Vision Pro.</h1></div>
+<div class="vrh"><h3>Welcome to the era of spatial computing. </h3></div>
+<div class="vrh2"><h5>Available early next year in the US</h5></div>
+<div class="vrh3"><a href="#">Learn More.</a></div>
+</section>
+<section id="box2">
+<img id="applewatch" src="./apple watch.jpg">
+<div class="watchhead"><h2><i class="fa-brands fa-apple"></i>Watch</h2></div>
+<div class="watchhead2"><h4>series 8</h4></div>
+<div class="watchhead3"><h3>A healthy leap ahead</h3></div>
+<div class="watchhead4"><a href="#">Learn More ></a>&nbsp;&nbsp;<a href="#">Buy ></a></div>
+<img id="back" src="./ipads.jpg">
+<div class="back1"><h1>Save on Mac or iPad</h1></div>
+<div class="back2"><h1>for College.</h1></div>
+<div class="back3"><h3>Plus get a gift card upto $150 <sup>2</sup></h3></div>
+<div class="back4"><a href="#">Shop now></a></div>
+
+</section>
+<section id="box3">
+<img id="ipad" src="./ipad.jpg"> 
+<div class="ipad1"><h1>iPad Pro</h1></div>
+<div class="ipad2"><h2>Supercharged by <img src="./a12.jpg" style="width: 35px; height: 35px;"></h2></div>
+<div class="ipad3"><a href="#">Learn More ></a>&nbsp;&nbsp;<a href="#">Buy ></a></div>
+<img id="iphone" src="./iphone14.jpg">
+<div class="iphone1"><h1><i class="fa-brands fa-apple"></i>Trade In</h1></div>
+<div class="iphone2"><h3>Upgrade and save. It's that easy.</h3></div>
+<div class="iphone3"><a href="#">See what your device is worth></a></div>
+</section>
+<div class="down">
+    <p>1. Trade-in values will vary based on the condition, year, and configuration of your eligible trade-in device. Not all devices are eligible for credit. You must be at least 18 years</p>
+    <p>old to be eligible to trade in for credit or for an Apple Gift Card. Trade-in value may be applied toward qualifying new device purchase, or added to an Apple Gift Card. Actual</p>
+    <p>value awarded is based on receipt of a qualifying device matching the description provided when estimate was made. Sales tax may be assessed on full value of a new</p>
+    <p>device purchase. In-store trade-in requires presentation of a valid photo ID (local law may require saving this information). Offer may not be available in all stores, and may</p>
+    <p>vary between in-store and online trade-in. Some stores may have additional requirements. Apple or its trade-in partners reserve the right to refuse or limit quantity of any</p>
+    <p>trade-in transaction for any reason. More details are available from Apple’s trade-in partner for trade-in and recycling of eligible devices. Restrictions and limitations may apply.</p>
+    <br>
+    <p>2. Qualified Purchasers receive an Apple Gift Card when they purchase an eligible Mac or iPad at a Qualifying Location. Only one Apple Gift Card per eligible Mac or iPad per</p>
+    <p>Qualified Purchaser. Offer subject to availability. While supplies last. View full terms and conditions of offer<a>here.</a></p>
+    <br>
+    <p>Apple Vision Pro has not been authorized as required by the rules of the Federal Communications Commission. This device is not, and may not be, offered for sale or lease, or</p>
+    <p>sold or leased, until authorization is obtained.</p>
+    <br>
+    <p>Apple Vision Pro will be available early next year on apple.com and at Apple retail stores in the U.S.</p>
+    <br>
+    <p>A subscription is required for Apple TV+.</p>
+    <br>
+    <p>Major League Baseball trademarks and copyrights are used with permission of MLB Advanced Media, L.P. All rights reserved.</p>
+    <hr>
+</div>
+<div id="lists">
+  <div class="list 1">  
+  <ul>
+    <li><b>Shop and Learn</b></li>
+    <li>Store</li>
+    <li>Mac</li>
+    <li>iPad</li>
+    <li>iPhone</li>
+    <li>Watch</li>
+    <li>Vision</li>
+    <li>AirPods</li>
+    <li>TV & Home</li>
+    <li>Airtags</li>
+    <li>Gift cards</li>
+    <li>Acessories</li>
+ </ul>
+ <ul>
+    <li><b>Apple Wallet</b></li>
+    <li>Wallet</li>
+    <li>Apple Card</li>
+    <li>Apple Pay</li>
+    <li>Apple Cash</li>
+ </ul>
+ </div>
+ <div class="list 2">
+ <ul>
+    <li><b>Account</b></li>
+    <li>Manage Your Apple ID</li>
+    <li>Apple Store Account</li>
+    <li>iCloud.com</li>
+ </ul>
+ <ul>
+    <li><b>Entertainment</b></li>
+    <li>Apple One</li>
+    <li>Apple TV</li>
+    <li>Apple Music</li>
+    <li>Apple Arcade</li>
+    <li>Apple Fitness</li>
+    <li>Apple News</li>
+    <li>Apple Podcasts</li>
+    <li>Apple Books</li>
+    <li>App Store</li>
+ </ul>
+ </div>
+ <div class="list 3">
+ <ul>
+    <li><b>Apple store</b></li>
+    <li>Find a store</li>
+    <li>Genius Bar</li>
+    <li>Today at Apple</li>
+    <li>Apple Camp</li>
+    <li>Certified refurbished</li>
+    <li>Apple Trad In</li>
+    <li>Financing</li>
+    <li>Carrier deals at Apple</li>
+    <li>Order status</li>
+    <li>Shopping Help</li>
+ </ul>
+ </div>
+ <div class="list 4">
+    <ul>
+        <li><b>For Business</b></li>
+        <li>Apple and Business</li>
+        <li>Shop for Business</li>
+    </ul>
+    <ul>
+        <li><b>For Education</b></li>
+        <li>Shop For K-12</li>
+        <li>Shop for College</li>
+        <li>Apple And Education</li>
+    </ul>
+    <ul>
+        <li><b>For Healthcare</b></li>
+        <li>Apple In Healthcare</li>
+        <li>Health on Apple Watch</li>
+        <li>Health Records on iPhone</li>
+    </ul>
+    <ul>
+        <li><b>For Government</b></li>
+        <li>Shop For Government</li>
+        <li>Shop for Veterans and Military</li>
+    </ul>
+ </div>
+    <div class="list 5">
+        <ul>
+            <li><b>Apple Values</b></li>
+            <li>Accessibility</li>
+            <li>Education</li>
+            <li>Environment</li>
+            <li>Inclusion and Diversity</li>
+            <li>Privacy</li>
+            <li>Racial Equity and Justice</li>
+            <li>Supplier Responsibility</li>
+        </ul>
+        <ul>
+            <li><b>About Apple</b></li>
+            <li>Newsroom</li>
+            <li>Apple Leadership</li>
+            <li>Career Opportunities</li>
+            <li>Investors</li>
+            <li>Ethics & Compliance</li>
+            <li>Events</li>
+            <li>Contact Apple</li>
+        </ul>
+    </div>
+
+<div style="width: 100%; background-color:rgb(237, 237, 237) ;">
+    <p style="margin-left: 3.5%; font-size: medium;">More ways to shop:<a href="#">Find on Apple Store</a> or <a href="#">other retailers</a> near you. Or call 1-800-MY-APPLE.</p>
+    <hr>
+    <p style="margin-left: 3.5%; font-size: small;">Copyright © 2023 Apple Inc. All rights reserved.&nbsp;&nbsp;Privacy Policy | Terms of Use | Sales and Refunds | Legal | Site Map</p>
+</div></div>
+</body>
+</html>
